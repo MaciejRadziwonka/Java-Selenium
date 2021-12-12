@@ -13,11 +13,11 @@ public class LoginPage {
     public LoginPage login() {
         WebElement Login = driver.findElement(By.cssSelector("#login"));
         Login.click();
-        Login.sendKeys("mradziwonka");
+        Login.sendKeys("XYZ");
 
         WebElement Password = driver.findElement(By.cssSelector("#passwd"));
         Password.click();
-        Password.sendKeys("Vision73mr");
+        Password.sendKeys("XYZ");
 
         return this;
     }
