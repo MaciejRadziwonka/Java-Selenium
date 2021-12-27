@@ -22,14 +22,10 @@ public class CustomerBillingData {
 
     public CustomerBillingData OpenBillingdatatab() {
 
-
         Latency(3);
 
         driver.findElement(By.xpath("//div[@class='toast toast-success']")).click();
-
         driver.findElement(By.xpath("(//span[@class ='tab-title'])[4]")).click();
-
-        System.out.println("Open Billing Data Tab passed");
 
         return this;
     }
@@ -37,8 +33,6 @@ public class CustomerBillingData {
     public CustomerBillingData CreatePayers() {
         Latency(3);
         driver.findElement(By.xpath("//div[@id ='customerPayerPager-create']")).click();
-
-        System.out.println("Create Payers passed");
 
         return this;
     }
@@ -54,15 +48,11 @@ public class CustomerBillingData {
         searchPerson.sendKeys(Keys.ENTER);
         Latency(2);
 
-        System.out.println("Search Payers passed");
-
         return this;
     }
 
     public CustomerBillingData SavePayer() {
         driver.findElement(By.xpath("//button[@id='savePanelButtton']")).click();
-
-        System.out.println("Save Payer Passed");
 
         return this;
     }
@@ -72,8 +62,6 @@ public class CustomerBillingData {
         Latency(2);
         driver.findElement(By.xpath("//div[@class='toast toast-success']")).click();
         driver.findElement(By.xpath("//div[@id='customerBankAccountPager-create']")).click();
-
-        System.out.println("Create Bank Account Passed");
 
         return this;
     }
@@ -87,8 +75,6 @@ public class CustomerBillingData {
         payer.sendKeys(Keys.DOWN);
         payer.sendKeys(Keys.ENTER);
 
-        System.out.println("Select Payer Passed");
-
         return this;
     }
 
@@ -99,8 +85,6 @@ public class CustomerBillingData {
 
         account.click();
         account.sendKeys("1234567890123456");
-
-        System.out.println("Fill Acc Number Passed");
 
         return this;
 
@@ -114,16 +98,12 @@ public class CustomerBillingData {
         currency.sendKeys(Keys.DOWN);
         currency.sendKeys(Keys.ENTER);
 
-        System.out.println("Select Currency Passed");
-
         return this;
     }
 
     public CustomerBillingData SaveAccount() {
 
         driver.findElement(By.xpath("//button[@id='savePanelButtton']")).click();
-
-        System.out.println("Save Account Passed");
 
         return this;
 
