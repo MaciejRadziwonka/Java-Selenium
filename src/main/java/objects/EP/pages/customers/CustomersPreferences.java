@@ -25,10 +25,7 @@ public class CustomersPreferences {
         Latency(5);
 
         driver.findElement(By.xpath("//div[@class='toast toast-success']")).click();
-
         driver.findElement(By.xpath("(//span[@class ='tab-title'])[3]")).click();
-
-        System.out.println("Customer Preferences Tab Passed");
 
         return this;
     }
@@ -38,10 +35,7 @@ public class CustomersPreferences {
         Latency(1);
 
         driver.findElement(By.xpath("//div[@id ='preferencesPager-create']")).click();
-
         Latency(1);
-
-        System.out.println("Creating Preferation Passed");
 
         return this;
     }
@@ -52,8 +46,6 @@ public class CustomersPreferences {
         WebElement group = driver.findElement(By.xpath("//input[@placeholder ='* Preference group']"));
         group.click();
         group.sendKeys(Keys.ENTER);
-
-        System.out.println("Adding Preferation Passed");
 
         return this;
     }
@@ -66,8 +58,6 @@ public class CustomersPreferences {
         Latency(1);
         floor.sendKeys("1");
 
-        System.out.println("Selecting Floor passed");
-
         return this;
     }
 
@@ -78,19 +68,14 @@ public class CustomersPreferences {
         value.click();
         value.sendKeys("3");
 
-        System.out.println("Selecting Value passed");
-
         return this;
     }
 
     public CustomersPreferences SavingChanges() {
 
         driver.findElement(By.xpath("//button[@id ='savePanelButtton']")).click();
-
         Latency(3);
         driver.findElement(By.xpath("//div[@class='toast toast-success']")).click();
-
-        System.out.println("Saving changes passed");
 
         return this;
     }
